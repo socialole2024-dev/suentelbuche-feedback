@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: suentelbuche-feedback
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_REPO
+        sync: false
+      - key: GITHUB_BRANCH
+        value: main
+      - key: RESP_DIR
+        value: rueckmeldungen
+      - key: ADMIN_TOKEN
+        sync: false

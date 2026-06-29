@@ -1,0 +1,9 @@
+{
+  "name": "jaywiz-feedback-collector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wiederverwendbarer Feedback-Collector: serviert einen Klick-Wizard und legt Rückmeldungen als Markdown in ein GitHub-Repo.",
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.19.2" }
+}
